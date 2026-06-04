@@ -103,7 +103,22 @@ It makes sense when building page layouts because the structure is easier to rea
 ENGINEERING THINKING
 1A. To be done on paper
 1b. to me, fr is needed when you want a particular row or column to share the space thats available and auto will just take the space of the content only while percentage is for something fixed.
-2. 
+2. code
+
+CLASS 08
+TAILWIND CSS FUNDAMENTALS(THEORY)
+1. Utility-first means you build your design using small ready-made classes (like `p-4`, `text-center`, `bg-blue-500`) instead of writing custom CSS for every component.
+Tailwind prefers this because it is faster, keeps all styling in one place, and reduces the need to constantly switch between HTML and CSS files.
+
+2. According to me research, JIT(just in time) in tailwind is all about building styles when needed instead of generating lots of unused styles.
+
+PRODUCT THINKING
+1. Tailwind may look messy at first because of many classes in the HTML, but everything is visible in one place.It makes maintenance easier since I don't need to jump between HTML and CSS files.
+It keeps the design consistent because everyone uses the same set of utility classes.
+Unused styles are removed automatically, so the final CSS file stays small.And lastly updates websites very fast.
+
+ENGINEERING THINKING
+1. code.
 
 
 
