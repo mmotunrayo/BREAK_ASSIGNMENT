@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+button {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  text-align: right;
+}
