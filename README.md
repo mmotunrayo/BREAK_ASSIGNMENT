@@ -120,6 +120,17 @@ Unused styles are removed automatically, so the final CSS file stays small.And l
 ENGINEERING THINKING
 1. code.
 
+CLASS 09
+ADVANCED TAILWIND CSS(THEORY)
+1.Break points is all about design based on the size of the screen and md: is for medium screens like for instance if i have md: text-sm makes text smaller on desktops because automatically tailwind css operates mobile.
+2. Arbitrary values let one use any custom size directly.
+
+ENGINEERING PRACTICE
+1. dark mode let users switch between the normal light mode and dark mode and to set dark mode for instance we have bg:white dark:bg-black.
+2. code.
+
+CLASS 10
+MEMORY AND VARIABLES(THEORY)
 
 
 
