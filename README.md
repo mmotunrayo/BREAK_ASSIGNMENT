@@ -132,13 +132,100 @@ ENGINEERING PRACTICE
 CLASS 10
 MEMORY AND VARIABLES(THEORY)
 
+1. to start with var is a traditional way of creating variables and the value can be chnaged, but LET is the modernised way and its value can be changed anytime unlike var while const is those values that a new value cant be assigned to it,but you can still add ,remove it just only stops you from replacing the whole object.
+2. Temporal dead zone to my undrerstanding is all about not being able to use a variable before creating it like for instance,
+console.log(name);
+let name = monsurah
+so,javascripts will show an error.
+3. i have no idea.
+
+PRODUCT THINKING
+1. THE display value will use let,because the displayed value changes time to time 
+OPerator also use let because the user might want to use any of it and
+Previous operand also use let because it changes after each calculation.
+const is meant for values that wont change throughout the app.
 
 
+CLASS 11
+CONTROL FLOW AND COMPARISON(THEORY)
+1. To explain ==this convert data types and ===this is very strict type of equality,it compares both value and data types. e.g
+5=="5"...this will give true
+5==="5" ...this will give false because the "5" is a string and not just number.
+2. optional chaining ...I have no idea.
+3. NO IDEA TOO
+
+ENGINEERING THINKING
+1. 
+function validateLogin(user) {
+  let errors = [];
+
+  //for username
+  if (!user?.username || typeof user.username !== "string") {
+    errors.push("Username is required");
+  }
+
+  // password (required)
+  if (!user?.password || typeof user.password !== "string") {
+    errors.push("Password is required");
+  }
+
+  // rememberMe (optional, default = false)
+  let rememberMe = user?.rememberMe ?? false;
+
+  return {
+    valid: errors.length === 0,
+    errors,
+    rememberMe
+  };
+};
+
+2. 
+function gradeCalc(score) {
+  if (typeof score !== "number") return "Invalid input";
+
+  let pass = score >= 50 ? "Pass" : "Fail";
+
+  let grade =
+    score >= 90 ? "A" :
+    score >= 80 ? "B" :
+    score >= 70 ? "C" :
+    score >= 60 ? "D" : "F";
+
+  let distinction = score >= 90 && "Distinction";
+
+  return {
+    pass,
+    grade,
+    distinction
+  }
+};
 
 
+CLASS 12
+FUNCTIONS AND FUNCTIONAL PROGRAMMING(THEORY)
+1. Function declarations are fully lifted to the top of memory, so JavaScript already knows the function exists.
+Function expressions are treated like variables (let/const), so only the variable is hoisted, not the function inside it.
+2. A pure function returns same value everytime you call it .for imstance
+function add(a, b) {
+  return a + b;
+}.
 
+3. A callback is just a function you pass into another function, so it can be called back later.
+A higher-order function is any function that either takes another function as an argument, or returns a function.
+they are fundamentals because javascript is asynchronous ,it needss things like API's to work.
 
+PRODUCT THINKING
+1. I will use +,-,square rooot,* and division because they are all pure functions.
+2. instead of using f(g(h))
 
+CLASS 13
+DATA STRUCTURES(THEORY)
+1. Use an array when you have a list of similar things,Order matters (first, second, third…)you want to loop, map, filter, reduce, etc.
+Example:
+const scores = [50, 70, 85, 90]; 
+but you use object when you want something structured like a user profile with name,id ,age,favorite color and all.
 
+2. No idea.
 
-
+CLASS 14
+DOM MANIPULATION AND EVENTS (THEORY)
