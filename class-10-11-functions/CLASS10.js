@@ -1,7 +1,7 @@
 const addTwoAndSeven = () => { 
     return 2 + 7
 };
-console.log(addTwoAndSeven());     //what is the difference between calling and adding console
+console.log(addTwoAndSeven());    
 
 const addThreeAndFour = () =>{
     return 3 + 4
@@ -41,7 +41,7 @@ const calculateSquare = (num1,num2) => {
 };
 console.log (calculateSquare(12,5));
 console.log (calculateSquare(9,2));
-console.log (calculateSquare(10,1));      //we are asked to call differently,why.
+console.log (calculateSquare(10,1));     
 
 const calculateSquareRoot = (num1) => {
     return Math.sqrt(num1);

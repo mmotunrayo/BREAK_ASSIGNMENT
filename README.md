@@ -229,3 +229,16 @@ but you use object when you want something structured like a user profile with n
 
 CLASS 14
 DOM MANIPULATION AND EVENTS (THEORY)
+1. Event bubbling is when event starts from the clicked elements and moved to parents element while event capturing starts from the outer parents and moves down to the clicked element. i can use capturing when parents needs to react before the child and bubbling can be used anytime.
+2. Instead of adding a click listener to every button, add one listener to the parent and let it handle clicks from the children.
+Example:
+A todo list with 100 items. instead of adding 100 listeners i will add 1 listener to th <ul> and detect which item was clicked.
+3. InnerHTML vs createElement/textContent innerHTML can run harmful code if users enter malicious content.CreateElement and textContent treat input as plain text, making them safer.
+
+ENGINEERING THINKING
+1. 
+
+PRODUCT THINKING
+1. 
+
+
