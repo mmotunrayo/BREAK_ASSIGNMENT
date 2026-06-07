@@ -1,0 +1,32 @@
+body{
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: aqua;
+}
+
+#btn {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+#btn:hover {
+  background-color: red;
+  cursor: pointer;
+    
+    
+}

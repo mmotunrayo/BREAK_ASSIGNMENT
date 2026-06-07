@@ -1,0 +1,31 @@
+ body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    #question {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #progress,
+    #score {
+        font-weight: bold;
+        margin: 10px 0;
+    }

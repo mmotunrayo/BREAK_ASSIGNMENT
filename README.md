@@ -216,7 +216,25 @@ they are fundamentals because javascript is asynchronous ,it needss things like 
 
 PRODUCT THINKING
 1. I will use +,-,square rooot,* and division because they are all pure functions.
-2. instead of using f(g(h))
+ENGINEERING THINKING
+1. 
+function compose(f,g,h){
+  return function(x){
+    return f(g(h(x)));
+  }
+}
+A compose function combines multiple function into one function. The expression compose (f,g,h)(x) means that f(g(h(x))) are executed from right to left.
+
+for instance
+js
+function add2(x){
+  return x+2;
+}
+function subtract4(x){
+  return x - 4;
+};
+const result = compose(add2,subtract4);
+console.log(result(-2));
 
 CLASS 13
 DATA STRUCTURES(THEORY)
@@ -240,5 +258,46 @@ ENGINEERING THINKING
 
 PRODUCT THINKING
 1. 
+
+CLASS 15
+PERSONAL DASHBOARD(THEORY)
+PERSONAL REFLECTION
+1. The hardest part of this mini project is the engineering thinking aspect ,because the questions a applied questons and I have never think that way before. secondly is the java script aspect,my javascript concept is very low and im still working towards being better. and the debugging aspect,well it has not been easy,but immediately there is error ,i check my codes thoroughly and technically so as to check where the exact error is from.
+
+2. TO be honest,when i get stucked at some point ,i used my brain or seek fro help from colleagues ,but if we are unable to get the actual code needed,i will ask google for directives.
+
+3. my code organaisation is 7/10 and if i'm to start again,i will write more on my reflection questions because i learnt more from the questions.
+4. NIL 
+
+ENGINEERING BEST PRACTICE
+1. thngs i did well are a)i have a good structure b)i use my brain for the questions even though i made research for some questions and lastly,the git hub struture. and things i would love to iprove on are 1)my knowledege on application questions,problem solving skills and tehnical thinking.
+
+CLASS 16
+THE EVENT LOOP AND PROMISES(THEORY)
+1. javascript event loop alows js to run asynchroously.like running in motion,fixing a task to another task .So we have call stack,this is where we have functions that are been executed  and task queue stores callback,and fro the name microtask queue. i.e it has higher priority that task queue.
+1. macrotask have large work todo while microtask runs imediately 
+
+CLASS 17
+ASYNC/AWAIT/AND FETCHPI
+1. async/await is like a structured way to work with promises. and much easier to debug
+for instance.
+js
+async function getUsers() {
+  const response = await fetch("https://Api.com/online_users");
+  const data = await response.json();
+  console.log(data);
+}
+getUsers();
+
+2. we use try and catch whenever an asynchronous function can fail and if we dont use it,there is high tendency of error.for instance
+js:
+async function getUsers() {
+  const response = await fetch("wrong-url");
+}
+getUsers();
+
+PRODUCT THINKING
+1. Debounce (500ms)
+
 
 
